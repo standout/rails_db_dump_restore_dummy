@@ -15,6 +15,7 @@ namespace :dummy do
     desc "Test #{stage} dummy app"
     task stage do
       system [
+        "RAILS_ENV=#{stage} bundle exec rake db:create",
         "RAILS_ENV=#{stage} bundle exec rake db:dump",
         "RAILS_ENV=#{stage} bundle exec rake db:restore",
         "RAILS_ENV=#{stage} bundle exec cap #{stage} deploy",
@@ -24,4 +25,5 @@ namespace :dummy do
   end
 end
 
+desc "Test dummy apps"
 task dummy: stages.map { |stage| "dummy:#{stage}" }
