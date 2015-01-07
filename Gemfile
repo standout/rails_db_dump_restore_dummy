@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 
+gem 'rails_db_dump_restore', path: '../rails_db_dump_restore'
+
+
 gem 'activerecord',       '= 4.2.0'
 gem 'capistrano',         '~> 3.3'
 gem 'capistrano-bundler', '~> 1.1'

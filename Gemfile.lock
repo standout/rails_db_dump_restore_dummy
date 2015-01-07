@@ -1,3 +1,8 @@
+PATH
+  remote: ../rails_db_dump_restore
+  specs:
+    rails_db_dump_restore (0.0.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -186,6 +191,7 @@ DEPENDENCIES
   mysql2 (~> 0.3)
   pg (~> 0.18)
   rails (= 4.2.0)
+  rails_db_dump_restore!
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
